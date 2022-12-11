@@ -1,6 +1,11 @@
-@use '../styles/base';
-@use '../styles/typography';
-@use '../styles/header';
-@use '../styles/buttons';
-@use '../styles/footer';
-@use '../styles/common';
+@use "base";
+@use "typography";
+@use "buttons";
+@use "common";
+@use "sections/header";
+@use "sections/main-baner";
+@use "sections/about";
+@use "sections/statistics";
+@use "sections/donate";
+@use "sections/contact";
+@use "sections/footer";

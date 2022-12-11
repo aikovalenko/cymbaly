@@ -1,0 +1,58 @@
+@use 'src/styles/variables' as *;
+
+.about {
+  background-color: #fff;
+
+  @include bp-1920 {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+}
+
+.article {
+  display: grid;
+  grid-gap: 32px;
+
+  @include bp-1280 {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  &__content {
+    display: grid;
+    grid-gap: 32px;
+    place-content: start;
+  }
+
+  &__actions {
+    display: grid;
+    grid-gap: 32px;
+
+    @include bp-1280 {
+      grid-auto-flow: column;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 90px;
+    margin: 0 auto;
+
+    @include bp-1280 {
+      margin: 0;
+    }
+  }
+}
+
+.icon-apple {
+  width: 20px;
+  height: 22px;
+}
+
+.icon-amazon {
+  width: 30px;
+  height: 18px;
+}

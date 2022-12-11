@@ -19,7 +19,6 @@
     "prettier": "^2.8.1",
     "sass": "^1.56.2"
   },
-  "browserslist": "last 2 versions",
   "dependencies": {
     "normalize.css": "^8.0.1"
   }

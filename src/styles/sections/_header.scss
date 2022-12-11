@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "src/styles/variables" as *;
 
 .header {
   position: absolute;
@@ -49,11 +49,6 @@
   display: block;
   width: 30px;
   height: 28px;
-}
-
-.main-logo {
-  width: 56px;
-  height: 50px;
 }
 
 .main-nav-list {

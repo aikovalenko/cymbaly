@@ -1,0 +1,111 @@
+@use 'src/styles/variables' as *;
+
+.main-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 700px;
+  background-color: #000;
+  background-image: url('../images/main-414@2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 460px;
+    background-image: linear-gradient(180deg, rgba(3, 1, 2, 0) 0%, #030102 73.44%);
+    content: '';
+
+    @include bp-768 {
+      display: none;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    height: 262px;
+    background-image: url('../images/glow-left-desktop@2x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+
+    @include bp-1280 {
+      width: 640px;
+      height: 545px;
+    }
+
+    @include bp-1680 {
+      width: 840px;
+      height: 673px;
+    }
+  }
+
+  @include bp-412 {
+    background-position: top;
+  }
+
+  @include bp-768 {
+    height: 540px;
+    background-image: url('../images/main-1280@2x.jpg');
+  }
+
+  @include bp-1280 {
+    height: 660px;
+  }
+
+  @include bp-1680 {
+    height: 770px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  @include bp-1920 {
+    height: 900px;
+    padding-top: 280px;
+    padding-bottom: 280px;
+  }
+}
+
+.main-banner-body {
+  z-index: 1;
+
+  @include bp-768 {
+    max-width: 340px;
+  }
+
+  @include bp-1280 {
+    max-width: 390px;
+  }
+
+  @include bp-1680 {
+    max-width: 486px;
+  }
+}
+
+.main-banner-title {
+  margin-bottom: 12px;
+}
+
+.main-banner-decor-line {
+  height: 2px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  opacity: 0.1;
+}
+
+.main-banner-button {
+  margin-top: 24px;
+
+  @include bp-1280 {
+    max-width: 260px;
+  }
+}

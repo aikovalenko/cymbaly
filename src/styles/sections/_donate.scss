@@ -1,0 +1,51 @@
+@use "src/styles/variables" as *;
+
+.donate {
+  background-color: #000;
+  background-image: url("../images/glow-down@2x.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 600px;
+
+  @include bp-1280 {
+    background-size: 1000px;
+  }
+
+  &__body {
+    display: grid;
+    grid-gap: 32px;
+
+    @include bp-1280 {
+      grid-gap: 52px;
+    }
+  }
+}
+
+.donate-list {
+  display: grid;
+  grid-gap: 20px;
+
+  @include bp-1280 {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.button-donate {
+  height: 80px;
+}
+
+.button-donate-btc {
+  width: 100%;
+  padding: 14px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 900;
+
+  @include bp-1280 {
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}

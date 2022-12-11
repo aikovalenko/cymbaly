@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html --dist-dir docs"
+    "build-prod": "parcel build src/index.html --public-url ./ --dist-dir docs"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",

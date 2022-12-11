@@ -1,0 +1,1 @@
+{"mappings":"AAEAA,QAAQC,IAAI","sources":["src/index.js"],"sourcesContent":["import 'normalize.css';\nimport './styles/styles.scss';\nconsole.log('hello world!');\n"],"names":["console","log"],"version":3,"file":"index.cb275943.js.map"}

@@ -1,0 +1,43 @@
+@use "src/styles/variables" as *;
+
+.image-gallery {
+  background-color: #000;
+}
+
+.gallery-slider {
+  margin-bottom: 30px;
+
+  @include bp-768 {
+    margin-bottom: 100px;
+  }
+
+  & .swiper-wrapper {
+    padding: 20px 0;
+  }
+}
+
+.image-wrapper {
+  border: 5px solid rgb(28 28 28);
+  border-radius: 6px;
+
+  img {
+    width: 100%;
+  }
+
+  &--1 {
+    transform: rotate(2deg);
+  }
+  &--2 {
+    transform: rotate(-1.5deg);
+  }
+  &--3 {
+    transform: rotate(-4deg);
+  }
+}
+
+.slider-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0.2;
+}

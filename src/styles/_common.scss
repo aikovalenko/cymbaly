@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 .container {
   padding-left: 32px;
@@ -36,12 +36,4 @@
   @include bp-1280 {
     margin-bottom: 52px;
   }
-}
-
-.image-gallery {
-  background-color: #000;
-}
-
-.video-gallery {
-  background-color: #000;
 }

@@ -1,15 +1,19 @@
-@use 'src/styles/variables' as *;
+@use "src/styles/variables" as *;
 
 .main-banner {
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 700px;
+  height: 716px;
   background-color: #000;
-  background-image: url('../images/main-414@2x.jpg');
+  background-image: url("../images/main-414.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include retina-display {
+    background-image: url("../images/main-414@2x.jpg");
+  }
 
   &:before {
     position: absolute;
@@ -17,8 +21,12 @@
     bottom: 0;
     width: 100%;
     height: 460px;
-    background-image: linear-gradient(180deg, rgba(3, 1, 2, 0) 0%, #030102 73.44%);
-    content: '';
+    background-image: linear-gradient(
+      180deg,
+      rgba(3, 1, 2, 0) 0%,
+      #030102 73.44%
+    );
+    content: "";
 
     @include bp-768 {
       display: none;
@@ -31,15 +39,24 @@
     bottom: 0;
     width: 320px;
     height: 262px;
-    background-image: url('../images/glow-left-desktop@2x.png');
+    background-image: url("../images/glow-left-mobile.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    content: '';
+    content: "";
+
+    @include retina-display {
+      background-image: url("../images/glow-left-mobile@2x.png");
+    }
 
     @include bp-1280 {
       width: 640px;
       height: 545px;
+      background-image: url("../images/glow-left-desktop.png");
+
+      @include retina-display {
+        background-image: url("../images/glow-left-desktop@2x.png");
+      }
     }
 
     @include bp-1680 {
@@ -54,7 +71,11 @@
 
   @include bp-768 {
     height: 540px;
-    background-image: url('../images/main-1280@2x.jpg');
+    background-image: url("../images/main-1280.jpg");
+
+    @include retina-display {
+      background-image: url("../images/main-1280@2x.jpg");
+    }
   }
 
   @include bp-1280 {

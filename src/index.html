@@ -299,10 +299,10 @@
           <nav class="header__nav">
             <ul class="main-nav-list">
               <li>
-                <a href="" class="main-nav-list-link">About</a>
+                <a href="#about" class="main-nav-list-link">About</a>
               </li>
               <li>
-                <a href="" class="main-nav-list-link">Music</a>
+                <a href="#music" class="main-nav-list-link">Music</a>
               </li>
             </ul>
           </nav>
@@ -323,13 +323,18 @@
           >
         </div>
       </section>
-      <section class="section container about">
+      <section id="about" class="section container about">
         <h2 class="section__title title text-black text-center">
           My name is Inessa and I am a professional musician
         </h2>
         <div class="article">
           <div>
-            <img src="images/photo-1@2x.jpg" alt="" />
+            <img
+              class="article__image"
+              srcset="images/photo-1@2x.jpg 2x"
+              src="images/photo-1.jpg"
+              alt=""
+            />
           </div>
           <div class="article__content">
             <p class="text-s text-black">
@@ -396,7 +401,7 @@
           </div>
         </div>
       </section>
-      <section class="section container statistics">
+      <section id="music" class="section container statistics">
         <h2 class="section__title title text-center">
           I played in numerous concerts and festivals in Germany, Austria,
           Italy, Poland, France, and CIS
@@ -432,7 +437,72 @@
           You can enjoy my live performances in Cyprus, Europe and all over the
           world
         </h2>
-        <div>!!!SLIDER!!!</div>
+        <div id="gallery-slider" class="swiper gallery-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--1">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--2">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--3">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--1">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--2">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper image-wrapper--3">
+                <img src="https://place-hold.it/270x385" alt="1" />
+              </div>
+            </div>
+          </div>
+          <div class="slider-buttons">
+            <button type="button" class="swiper-button-prev">
+              <svg
+                width="83"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 83 16"
+              >
+                <path
+                  d="M.2929 8.8953c-.3905-.3905-.3905-1.0237 0-1.4142l6.364-6.364c.3905-.3905 1.0236-.3905 1.4142 0 .3905.3906.3905 1.0237 0 1.4143L2.4142 8.1882l5.6569 5.6569c.3905.3905.3905 1.0237 0 1.4142-.3906.3905-1.0237.3905-1.4142 0l-6.364-6.364ZM83 9.1883H1v-2h82v2Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <button type="button" class="swiper-button-next">
+              <svg
+                width="83"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 83 16"
+              >
+                <path
+                  d="M82.7071 8.8953c.3905-.3905.3905-1.0237 0-1.4142l-6.364-6.364c-.3905-.3905-1.0236-.3905-1.4142 0-.3905.3906-.3905 1.0237 0 1.4143l5.6569 5.6568-5.6569 5.6569c-.3905.3905-.3905 1.0237 0 1.4142.3906.3905 1.0237.3905 1.4142 0l6.364-6.364ZM0 9.1883h82v-2H0v2Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="container">
           <a href="" class="button button--l button--gradient button-adaptive"
             >Book now</a
@@ -444,7 +514,39 @@
           Check out my studio albums with popular songs arrangements and
           original works
         </h2>
-        <div>!!!SLIDER!!!</div>
+        <div class="videos-slider">
+          <div id="videos-slider" class="swiper videos-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/5HgunPhwsdg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="swiper-slide">
+                <iframe
+                  id="player1"
+                  width="612"
+                  height="345"
+                  src="https://www.youtube.com/embed/xvJRCI9ERsQ?enablejsapi=1&html5=1&rel=0"
+                  frameborder="0"
+                  allowfullscreen
+                  iframe-video
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
         <div class="container">
           <a href="" class="button button--s button--white button-adaptive">
             <span class="button__icon">
@@ -461,7 +563,7 @@
                 />
               </svg>
             </span>
-            <span>Listen on Spotify</span>
+            <span>Watch on Youtube</span>
           </a>
         </div>
       </section>
@@ -508,7 +610,7 @@
           </ul>
           <!--          Donate BTC-->
           <a href="" class="button button--white button-donate-btc">
-            <span class="button__icon"
+            <span class="button__icon button-donate-btc__icon"
               ><svg
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -542,30 +644,55 @@
           Send a request to attend the event and we'll send you a press kit
           back.
         </p>
-        <form class="form" action="" method="POST">
-          <div class="form-control">
-            <label class="label" for="name">Name</label>
-            <input class="input" type="text" name="name" id="name" />
+        <div class="form-holder">
+          <form class="form" action="" method="POST">
+            <div class="form-control">
+              <label class="label" for="name">Name</label>
+              <input
+                class="input input--error"
+                type="text"
+                name="name"
+                id="name"
+              />
+              <div class="error-msg">Error</div>
+            </div>
+            <div class="form-control">
+              <label class="label" for="email">Email</label>
+              <input class="input" type="email" name="email" id="email" />
+            </div>
+            <div class="form-control form-control--desktop-full">
+              <label class="label" for="message">Your Message</label>
+              <textarea class="textarea" name="message" id="message"></textarea>
+            </div>
+            <button
+              class="contact-submit button button--l button--black button-adaptive form-control--desktop-full"
+              type="submit"
+            >
+              Contact
+            </button>
+          </form>
+          <div style="display: none" class="form-success">
+            <img
+              class="form-success__icon"
+              width="60"
+              height="60"
+              src="icons/success.svg"
+              alt="Success"
+            />
+            <p class="text-s text-black">
+              Message sent<br /><br />
+              Thank you for writing to me! I appreciate your time and will get
+              back to you soon.
+            </p>
           </div>
-          <div class="form-control">
-            <label class="label" for="name">Email</label>
-            <input class="input" type="email" name="email" id="email" />
-          </div>
-          <div class="form-control form-control--desktop-full">
-            <label class="label" for="message">Your Message</label>
-            <textarea class="textarea" name="message" id="message"></textarea>
-          </div>
-          <button
-            class="contact-submit button button--l button--black button-adaptive form-control--desktop-full"
-            type="submit"
-          >
-            Contact
-          </button>
-        </form>
+        </div>
         <div class="contact-details text-black">
-          <p>Also you can contact by phone, in whatsapp, telegram, viber.</p>
-          <p>
-            <!--          contact phone-->
+          <p class="contact-details__text">
+            Also you can contact by phone, in whatsapp, telegram, viber.
+          </p>
+
+          <div class="contact-details__phone">
+            <!-- contact phone -->
             <a href="" class="contact-link">
               <svg
                 width="25"
@@ -582,7 +709,28 @@
               <span>+357 96 708 204</span>
             </a>
             <span>(Max, manager)</span>
-          </p>
+          </div>
+          <div class="contact-details__email">
+            <a href="mailto:inessagragovskaya@gmail.com" class="contact-link">
+              <svg
+                width="25"
+                height="25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+              >
+                <path
+                  d="m15.3445 11.0607 6.269-6.0553c-.4302-.1998-.9053-.3198-1.4135-.3198H4.8004c-.5082 0-.9833.12-1.4135.3198l6.269 6.0553h5.6886Z"
+                  fill="#000"
+                />
+                <path
+                  d="m23.1688 6.508-6.9135 6.6779H8.7446L1.831 6.508c-.2068.4143-.3311.8745-.3311 1.3652V18.498c0 1.7575 1.4806 3.1875 3.3 3.1875h15.4c1.8194 0 3.3-1.43 3.3-3.1875l-.0002-10.6248c0-.4907-.1243-.951-.331-1.3652Z"
+                  fill="#000"
+                />
+              </svg>
+              <span>inessagragovskaya@gmail.com</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>

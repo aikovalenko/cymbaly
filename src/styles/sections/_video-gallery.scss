@@ -1,0 +1,38 @@
+@use "src/styles/variables" as *;
+
+.video-gallery {
+  position: relative;
+  background-color: #000;
+
+  &:after {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 323px;
+    height: 268px;
+    background-image: url("../images/glow-right.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina-display {
+      background-image: url("../images/glow-right@2x.png");
+    }
+
+    @include bp-768 {
+      content: "";
+    }
+
+    @include bp-1680 {
+      top: -200px;
+      width: 692px;
+      height: 574px;
+    }
+  }
+}
+
+.videos-slider {
+  iframe {
+    width: 100%;
+  }
+}

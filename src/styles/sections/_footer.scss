@@ -1,4 +1,4 @@
-@use 'src/styles/variables' as *;
+@use "src/styles/variables" as *;
 
 .main-footer {
   display: grid;
@@ -22,6 +22,12 @@
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-links-list {

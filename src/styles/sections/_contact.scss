@@ -165,4 +165,16 @@
   font-family: "Darker Grotesque", sans-serif;
   text-decoration: underline;
   color: #000;
+
+  transition: color 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:active {
+    color: #393939;
+  }
 }

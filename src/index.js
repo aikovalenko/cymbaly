@@ -2,14 +2,17 @@ import "normalize.css";
 import "./styles/styles.scss";
 import "swiper/swiper.min.css";
 
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Autoplay } from "swiper";
 
 const gallery = new Swiper("#gallery-slider", {
-  modules: [Navigation],
+  modules: [Navigation, Autoplay],
   slidesPerView: 2,
   centeredSlides: true,
   spaceBetween: 20,
   loop: true,
+  autoplay: {
+    delay: 1000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -32,8 +35,13 @@ const gallery = new Swiper("#gallery-slider", {
 });
 
 const videos = new Swiper("#videos-slider", {
+  modules: [Navigation],
   slidesPerView: 2,
   centeredSlides: true,
   spaceBetween: 20,
   loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

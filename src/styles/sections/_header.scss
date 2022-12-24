@@ -49,6 +49,13 @@
   display: block;
   width: 30px;
   height: 28px;
+  transition: opacity 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .main-nav-list {
@@ -59,10 +66,11 @@
 
 .main-nav-list-link {
   font-size: 16px;
+  transition: opacity 0.2s;
 
   @media (hover: hover) {
     &:hover {
-      text-decoration: underline;
+      opacity: 0.5;
     }
   }
 }

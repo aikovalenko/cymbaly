@@ -1,7 +1,10 @@
 @use "src/styles/variables" as *;
 
-.donate {
+.donate-wrap {
   background-color: #000;
+}
+
+.donate {
   background-image: url("../images/glow-down@2x.png");
   background-position: center bottom;
   background-repeat: no-repeat;

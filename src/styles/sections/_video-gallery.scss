@@ -29,6 +29,10 @@
       height: 574px;
     }
   }
+
+  .swiper-wrapper {
+    padding: 20px 0;
+  }
 }
 
 .videos-slider {
@@ -38,7 +42,24 @@
     margin-bottom: 100px;
   }
 
+  .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.4;
+  }
+}
+
+.iframe-ratio {
+  position: relative;
+
+  @include bp-768 {
+    padding-bottom: 56%;
+  }
+
   iframe {
     width: 100%;
+    @include bp-768 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 }

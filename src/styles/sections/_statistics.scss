@@ -1,8 +1,11 @@
 @use "src/styles/variables" as *;
 
+.statistics-wrap {
+  background-color: #000;
+}
+
 .statistics {
   overflow: hidden;
-  background-color: #000;
 
   @include bp-1920 {
     padding-left: 280px;
@@ -18,7 +21,7 @@
     &:before {
       position: absolute;
       z-index: -1;
-      bottom: -40px;
+      bottom: -80px;
       left: 50%;
       width: 1440px;
       height: 610px;
@@ -32,10 +35,6 @@
         background-image: url("../images/glow-big@2x.png");
       }
     }
-  }
-
-  &__button {
-    mix-blend-mode: multiply;
   }
 }
 
